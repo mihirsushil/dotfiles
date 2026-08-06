@@ -25,6 +25,7 @@ in
   home.sessionPath = [
     "/Users/mihirsushil/.local/bin"
     "/Applications/ChatGPT.app/Contents/Resources"
+    "/Users/mihirsushil/.kimi-code/bin"
   ];
 
   programs.zsh = {
@@ -49,7 +50,7 @@ in
     settings = {
       user = {
         name = "Mihir Sushil";
-        email = "mihirsushilkumar@gmail.com";
+        email = "205089190+mihirsushil@users.noreply.github.com";
       };
       credential = {
         "https://github.com".helper = [ "" "!/opt/homebrew/bin/gh auth git-credential" ];
