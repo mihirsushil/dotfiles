@@ -18,14 +18,19 @@ in
     lazygit
     neovim
     nerd-fonts.hack
+    nodejs_22
   ];
 
   fonts.fontconfig.enable = true;
-  home.sessionVariables.EDITOR = "nvim";
+  home.sessionVariables = {
+    EDITOR = "nvim";
+    NPM_CONFIG_PREFIX = "${config.home.homeDirectory}/.npm-global";
+  };
   home.sessionPath = [
     "/Users/mihirsushil/.local/bin"
     "/Applications/ChatGPT.app/Contents/Resources"
     "/Users/mihirsushil/.kimi-code/bin"
+    "${config.home.homeDirectory}/.npm-global/bin"
   ];
 
   programs.zsh = {
